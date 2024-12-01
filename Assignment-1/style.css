@@ -1,0 +1,117 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.social-links a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Menubar styling */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Container to hold sidebar and main content */
+.container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Sidebar styling */
+aside {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+/* Main content styling */
+main {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.content-box {
+    background-color: #eaeaea;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.content-box h2 {
+    margin-bottom: 10px;
+}
+
+.content-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.content-box p {
+    color: #333;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
